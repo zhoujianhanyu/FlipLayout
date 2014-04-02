@@ -7,7 +7,7 @@ Android Flip 3D animation like web G+. (类似web版Google+的3D翻转效果)
 
 ## 使用方法
 
-像一般的Android组件直接在xml中使用
+像一般的Android组件直接在xml中使用，当然不仅限于TextView,也可以添加比较复杂的布局，但注意要保证只有两个child.
 
     <?xml version="1.0" encoding="utf-8"?>
     <com.storm.fliplayout.lib.FlipLayout xmlns:android="http://schemas.android.com/apk/res/android"
