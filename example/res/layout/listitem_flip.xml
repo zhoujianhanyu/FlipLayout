@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.storm.fliplayout.lib.FlipLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flipLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="#FFCCCCCC"
+        android:gravity="center"
+        android:text="Front"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#FF999999"
+        android:gravity="center"
+        android:text="Back"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:visibility="gone" />
+
+</com.storm.fliplayout.lib.FlipLayout>
