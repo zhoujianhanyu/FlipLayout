@@ -8,7 +8,6 @@ import android.content.Context;
 import android.graphics.Camera;
 import android.graphics.Matrix;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
@@ -18,8 +17,6 @@ import android.widget.FrameLayout;
 
 public class FlipLayout extends FrameLayout implements View.OnClickListener,
 		Animation.AnimationListener {
-	private static final String TAG = FlipLayout.class.getSimpleName();
-
 	private static final int DURATION = 800;
 	private static final Interpolator fDefaultInterpolator = new DecelerateInterpolator();
 
@@ -61,7 +58,6 @@ public class FlipLayout extends FrameLayout implements View.OnClickListener,
 			throw new IllegalStateException("FlipLayout can host only two direct children");
 		}
 
-		Log.e(TAG, getChildCount() + "");
 		mFrontView = getChildAt(0);
 		mBackView = getChildAt(1);
 	}
@@ -80,7 +76,6 @@ public class FlipLayout extends FrameLayout implements View.OnClickListener,
 		}
 
 		mIsFlipped = !mIsFlipped;
-		Log.e(TAG, "toggleView");
 	}
 
 	public void setOnFlipListener(OnFlipListener listener) {

@@ -49,12 +49,12 @@ public class FlipAdapter extends BaseAdapter {
 		holder.flipLayout.reset();
 		return convertView;
 	}
-}
 
-class Holder {
-	public FlipLayout flipLayout;
+	private class Holder {
+		public FlipLayout flipLayout;
 
-	public Holder(View view) {
-		flipLayout = (FlipLayout) view.findViewById(id.flipLayout);
+		public Holder(View view) {
+			flipLayout = (FlipLayout) view.findViewById(id.flipLayout);
+		}
 	}
 }
