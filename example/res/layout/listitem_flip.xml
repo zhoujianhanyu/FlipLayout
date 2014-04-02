@@ -6,7 +6,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:background="#FFCCCCCC"
         android:gravity="center"
@@ -15,7 +15,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="200dp"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:background="#FF999999"
